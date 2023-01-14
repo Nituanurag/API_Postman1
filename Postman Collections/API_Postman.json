@@ -23,7 +23,7 @@
 					}
 				}
 			],
-			"_postman_id": "0dcda671-9ae2-432c-92d0-6d3f36ce4e40",
+			"id": "0dcda671-9ae2-432c-92d0-6d3f36ce4e40",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -51,7 +51,7 @@
 					}
 				}
 			],
-			"_postman_id": "2adc1bd2-cd65-481a-a5cc-d8696f485919",
+			"id": "2adc1bd2-cd65-481a-a5cc-d8696f485919",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -77,8 +77,7 @@
 					"variable": [
 						{
 							"key": "ProgramID",
-							"value": "333",
-							"type": "string"
+							"value": "333"
 						}
 					]
 				}
@@ -101,7 +100,7 @@
 					}
 				}
 			],
-			"_postman_id": "4a8bdf1f-5fa0-45d2-b4ae-8683c7a36835",
+			"id": "4a8bdf1f-5fa0-45d2-b4ae-8683c7a36835",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -137,7 +136,7 @@
 					}
 				}
 			],
-			"_postman_id": "c03ee0dd-bef7-4f6c-95fb-c054422e9d59",
+			"id": "c03ee0dd-bef7-4f6c-95fb-c054422e9d59",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -173,7 +172,7 @@
 					}
 				}
 			],
-			"_postman_id": "ec36e0c2-a1e2-459d-9708-cd32ab180640",
+			"id": "ec36e0c2-a1e2-459d-9708-cd32ab180640",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -212,7 +211,7 @@
 					}
 				}
 			],
-			"_postman_id": "b76c42a1-cb48-420d-aacd-2b0a295d588e",
+			"id": "b76c42a1-cb48-420d-aacd-2b0a295d588e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -240,8 +239,7 @@
 					"variable": [
 						{
 							"key": "(ProgramID)",
-							"value": "333",
-							"type": "string"
+							"value": "333"
 						}
 					]
 				}
@@ -264,7 +262,7 @@
 					}
 				}
 			],
-			"_postman_id": "5d568ab9-6a0e-4d0d-9767-41f767a3df69",
+			"id": "5d568ab9-6a0e-4d0d-9767-41f767a3df69",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -280,22 +278,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}deletebyprogname/:ProgramName",
-					"host": [
-						"{{baseUrl}}deletebyprogname"
-					],
-					"path": [
-						":ProgramName"
-					],
-					"variable": [
-						{
-							"key": "ProgramName",
-							"value": "Jan23-CRUDCarriers-SDET-009",
-							"type": "string"
-						}
-					]
-				}
+				"url": "{{baseUrl}}/deletebyprogname/camden.biz"
 			},
 			"response": []
 		},
@@ -315,7 +298,7 @@
 					}
 				}
 			],
-			"_postman_id": "3d36196c-e226-49f1-8d87-a5e7905c72f3",
+			"id": "3d36196c-e226-49f1-8d87-a5e7905c72f3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -324,10 +307,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": {
 					"raw": "{{baseUrl}}/batches",
@@ -364,7 +344,7 @@
 					}
 				}
 			],
-			"_postman_id": "06782b84-830f-4dc3-8a39-d595d92e216f",
+			"id": "06782b84-830f-4dc3-8a39-d595d92e216f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -393,8 +373,7 @@
 					"variable": [
 						{
 							"key": "BatchId",
-							"value": "136",
-							"type": "string"
+							"value": "136"
 						}
 					]
 				}
@@ -417,7 +396,7 @@
 					}
 				}
 			],
-			"_postman_id": "085cc632-bbf4-4934-af1d-0c5bac7d6765",
+			"id": "085cc632-bbf4-4934-af1d-0c5bac7d6765",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -446,8 +425,7 @@
 					"variable": [
 						{
 							"key": "BatchName",
-							"value": "Jan23-CRUDCarriers-SDET-124",
-							"type": "string"
+							"value": "Jan23-CRUDCarriers-SDET-124"
 						}
 					]
 				}
@@ -470,7 +448,7 @@
 					}
 				}
 			],
-			"_postman_id": "ab15e174-b928-46b4-98e7-3e305564eabd",
+			"id": "ab15e174-b928-46b4-98e7-3e305564eabd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -499,8 +477,7 @@
 					"variable": [
 						{
 							"key": "ProgramId\n",
-							"value": "306",
-							"type": "string"
+							"value": "306"
 						}
 					]
 				}
@@ -523,7 +500,7 @@
 					}
 				}
 			],
-			"_postman_id": "6cfcf898-3f71-4c65-a703-0661fddfbcbf",
+			"id": "6cfcf898-3f71-4c65-a703-0661fddfbcbf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -559,7 +536,7 @@
 					}
 				}
 			],
-			"_postman_id": "614e2b56-e80d-4d07-bb6a-233e215b628d",
+			"id": "614e2b56-e80d-4d07-bb6a-233e215b628d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -595,7 +572,7 @@
 					}
 				}
 			],
-			"_postman_id": "420b2d8c-d37f-4c60-98f3-19f3cec2d66c",
+			"id": "420b2d8c-d37f-4c60-98f3-19f3cec2d66c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -623,8 +600,7 @@
 					"variable": [
 						{
 							"key": "BatchId",
-							"value": "355",
-							"type": "string"
+							"value": "355"
 						}
 					]
 				}
