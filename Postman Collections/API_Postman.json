@@ -188,7 +188,7 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/putprogram/301"
+				"url": "{{baseUrl}}/putprogram/java"
 			},
 			"response": []
 		},
