@@ -529,7 +529,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchName\": \"SAP\",\r\n \"batchDescription\": \"Python\",\r\n \"batchStatus\": \"Active\",\r\n \"batchNoOfClasses\": 12,\r\n \"programId\": 1090\r\n}\r\n",
+					"raw": "\r\n{\r\n\"batchName\":\"Jan23-ApiNinja5-SDET-016\",\r\n\"batchDescription\":\"Team-16\",\r\n\"batchStatus\":\"Active\", \r\n\"batchNoOfClasses\":7,\r\n\"programId\":1090\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
