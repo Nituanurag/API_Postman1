@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "7689309e-39c3-40a6-9da7-7a87d24cdf02"
+		},
+		{
 			"name": "All Programs",
 			"event": [
 				{
