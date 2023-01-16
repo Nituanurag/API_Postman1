@@ -278,7 +278,7 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/deletebyprogname/pgcoby.name"
+				"url": "{{baseUrl}}/deletebyprogname/PostgreSQL215"
 			},
 			"response": []
 		},
