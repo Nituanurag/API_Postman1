@@ -412,23 +412,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/batches/batchName/:BatchName",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"batches",
-						"batchName",
-						":BatchName"
-					],
-					"variable": [
-						{
-							"key": "BatchName",
-							"value": "Jan23-CRUDCarriers-SDET-124"
-						}
-					]
-				}
+				"url": "{{baseUrl}}/batches/batchName/Jan23-ApiNinja5-SDET-016"
 			},
 			"response": []
 		},
