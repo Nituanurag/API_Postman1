@@ -23,14 +23,14 @@
 					}
 				}
 			],
-			"id": "0dcda671-9ae2-432c-92d0-6d3f36ce4e40",
+			"id": "27942a53-8617-4759-8d79-8bde4888a908",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{BaseUrl}}"
+				"url": "{{BaseUrl}}/allPrograms"
 			},
 			"response": []
 		},
