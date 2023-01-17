@@ -412,7 +412,7 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/batches/batchName/Jan23-ApiNinja5-SDET-016"
+				"url": "{{baseUrl}}/batches/batchName/233"
 			},
 			"response": []
 		},
@@ -461,7 +461,7 @@
 					"variable": [
 						{
 							"key": "ProgramId\n",
-							"value": "306"
+							"value": "7635"
 						}
 					]
 				}
