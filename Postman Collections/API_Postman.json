@@ -112,14 +112,31 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"programId\": 11359,\r\n    \"programName\": \"API Rest assured\",\r\n    \"programDescription\": \"One week sprint\",\r\n    \"programStatus\": \"Active\",\r\n    \"creationTime\": \"2023-01-17T23:08:16.578+00:00\",\r\n    \"lastModTime\": \"2023-01-17T23:08:16.578+00:00\"\r\n    }\r\n// {\r\n// \"programName\": \"Python Programming Advanced 2\",\r\n//  \"programDescription\": \"Python Advanced\",\r\n//  \"programStatus\": \"Active\",\r\n//  \"creationTime\": \"2022-09-28T19:53:25.244+00:00\",\r\n//  \"lastModTime\": \"2022-09-28T19:53:25.244+00:00\"\r\n// }",
+							"raw": "{\"programId\": 11359,\r\n    \"programName\": \"API_Rest_assured1\",\r\n    \"programDescription\": \"One week sprint\",\r\n    \"programStatus\": \"Active\",\r\n    \"creationTime\": \"2023-01-17T23:08:16.578+00:00\",\r\n    \"lastModTime\": \"2023-01-17T23:08:16.578+00:00\"\r\n    }\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{baseUrl}}/putprogram/319"
+						"url": {
+							"raw": "{{baseUrl}}/putprogram/11359",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"putprogram",
+								"11359"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -290,317 +307,318 @@
 		},
 		{
 			"name": "Batch",
-			"item": [],
+			"item": [
+				{
+					"name": "All Batches",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e0fd9864-cbea-41a1-bd32-f8c7e2f4549b",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3d36196c-e226-49f1-8d87-a5e7905c72f3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}/batches",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"batches"
+							],
+							"query": [
+								{
+									"key": "programName",
+									"value": "Python",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Batches By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46e3052d-e078-4a28-8737-fb3604952828",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "06782b84-830f-4dc3-8a39-d595d92e216f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/batches/batchId/:BatchId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"batches",
+								"batchId",
+								":BatchId"
+							],
+							"variable": [
+								{
+									"key": "BatchId",
+									"value": "1255"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Batches By Batch Name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46e3052d-e078-4a28-8737-fb3604952828",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "085cc632-bbf4-4934-af1d-0c5bac7d6765",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/batches/batchName/233"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Batches By Program Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46e3052d-e078-4a28-8737-fb3604952828",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ab15e174-b928-46b4-98e7-3e305564eabd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/batches/program/:ProgramId\n",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"batches",
+								"program",
+								":ProgramId\n"
+							],
+							"variable": [
+								{
+									"key": "ProgramId\n",
+									"value": "7635"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Batch By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46e3052d-e078-4a28-8737-fb3604952828",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "6cfcf898-3f71-4c65-a703-0661fddfbcbf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"batchName\": \"136\",\r\n \"batchDescription\": \"SAP\",\r\n \"batchStatus\": \"Active\",\r\n \"batchNoOfClasses\": 4,\r\n \"programId\": 305,\r\n \"programName\": \"SDET75\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/batches/136"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Batch",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46e3052d-e078-4a28-8737-fb3604952828",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "614e2b56-e80d-4d07-bb6a-233e215b628d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n\"batchName\":\"Jan23-ApiNinja5-SDET-Team16\",\r\n\"batchDescription\":\"Team-16\",\r\n\"batchStatus\":\"Active\", \r\n\"batchNoOfClasses\":7,\r\n\"programId\":7779\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/batches"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Batch By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46e3052d-e078-4a28-8737-fb3604952828",
+								"exec": [
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "420b2d8c-d37f-4c60-98f3-19f3cec2d66c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"batchName\": \"PY02\",\r\n \"batchDescription\": \"Python\",\r\n \"batchStatus\": \"Active\",\r\n \"batchNoOfClasses\": 12,\r\n \"programId\": 10\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/batches/:BatchId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"batches",
+								":BatchId"
+							],
+							"variable": [
+								{
+									"key": "BatchId",
+									"value": "2418"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "06893f2b-feb8-423c-9025-d99829942bca"
-		},
-		{
-			"name": "All Batches",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "e0fd9864-cbea-41a1-bd32-f8c7e2f4549b",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "3d36196c-e226-49f1-8d87-a5e7905c72f3",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{baseUrl}}/batches",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"batches"
-					],
-					"query": [
-						{
-							"key": "programName",
-							"value": "Python",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Batches By Id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "46e3052d-e078-4a28-8737-fb3604952828",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "06782b84-830f-4dc3-8a39-d595d92e216f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{baseUrl}}/batches/batchId/:BatchId",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"batches",
-						"batchId",
-						":BatchId"
-					],
-					"variable": [
-						{
-							"key": "BatchId",
-							"value": "1255"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Batches By Batch Name",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "46e3052d-e078-4a28-8737-fb3604952828",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "085cc632-bbf4-4934-af1d-0c5bac7d6765",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/batches/batchName/233"
-			},
-			"response": []
-		},
-		{
-			"name": "Get Batches By Program Id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "46e3052d-e078-4a28-8737-fb3604952828",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "ab15e174-b928-46b4-98e7-3e305564eabd",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{baseUrl}}/batches/program/:ProgramId\n",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"batches",
-						"program",
-						":ProgramId\n"
-					],
-					"variable": [
-						{
-							"key": "ProgramId\n",
-							"value": "7635"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Batch By Id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "46e3052d-e078-4a28-8737-fb3604952828",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "6cfcf898-3f71-4c65-a703-0661fddfbcbf",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n \"batchName\": \"136\",\r\n \"batchDescription\": \"SAP\",\r\n \"batchStatus\": \"Active\",\r\n \"batchNoOfClasses\": 4,\r\n \"programId\": 305,\r\n \"programName\": \"SDET75\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/batches/136"
-			},
-			"response": []
-		},
-		{
-			"name": "Create Batch",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "46e3052d-e078-4a28-8737-fb3604952828",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "614e2b56-e80d-4d07-bb6a-233e215b628d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "\r\n{\r\n\"batchName\":\"Jan23-ApiNinja5-SDET-Team16\",\r\n\"batchDescription\":\"Team-16\",\r\n\"batchStatus\":\"Active\", \r\n\"batchNoOfClasses\":7,\r\n\"programId\":7779\r\n}\r\n\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/batches"
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Batch By Id",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "46e3052d-e078-4a28-8737-fb3604952828",
-						"exec": [
-							"pm.test(\"Verify status code 200\"), () => {\r",
-							"    pm.response.to.have.status(200);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "420b2d8c-d37f-4c60-98f3-19f3cec2d66c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"batchName\": \"PY02\",\r\n \"batchDescription\": \"Python\",\r\n \"batchStatus\": \"Active\",\r\n \"batchNoOfClasses\": 12,\r\n \"programId\": 10\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{baseUrl}}/batches/:BatchId",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"batches",
-						":BatchId"
-					],
-					"variable": [
-						{
-							"key": "BatchId",
-							"value": "2418"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
