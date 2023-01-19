@@ -177,42 +177,6 @@
 					"response": []
 				},
 				{
-					"name": "Create program",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "814d4981-5b65-4e20-be1e-2253eea0ee70",
-								"exec": [
-									"pm.test(\"Verify status code 201\"), () => {\r",
-									"    pm.response.to.have.status(201);\r",
-									"}"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "999c3630-e7fe-4a1f-adba-97104725c0b3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"programName\": \"Selenium\",\r\n\"programDescription\": \"MySql\",\r\n\"programStatus\": \"Active1\",\r\n\"creationTime\": \"2023-01-07T04:13:00.000+00:00\",\r\n \"lastModTime\": \"2023-01-07T04:13:00.000+00:00\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/saveprogram"
-					},
-					"response": []
-				},
-				{
 					"name": "Update Program By Name",
 					"event": [
 						{
