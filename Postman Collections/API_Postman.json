@@ -213,42 +213,6 @@
 					"response": []
 				},
 				{
-					"name": "Patch Update program by Id",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "cbd72261-443a-440c-957d-cd1b84693f32",
-								"exec": [
-									"pm.test(\"Verify status code 200\"), () => {\r",
-									"    pm.response.to.have.status(200);\r",
-									"}"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "1628972e-e96c-447b-b387-9e665f1438e9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"programId\": 6495,\r\n        \"programName\": \"Jan23-APICoders-SDET-017\",\r\n        \"programDescription\": \"API-Hackathon1-postmanss111\",\r\n        \"programStatus\": \"Active\",\r\n        \"creationTime\": \"2023-01-19T03:07:03.815+00:00\",\r\n        \"lastModTime\": \"2023-01-19T03:07:03.815+00:00\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseUrl}}/putprogram/Jan23-APICoders-SDET-017"
-					},
-					"response": []
-				},
-				{
 					"name": "Delete By Id",
 					"event": [
 						{
