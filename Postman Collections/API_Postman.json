@@ -48,7 +48,9 @@
 									"pm.test(\"Verify status code 200\"), () => {\r",
 									"    pm.response.to.have.status(200);\r",
 									"}\r",
-									"const response = pm.response.json;"
+									"const response = pm.response.json;\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
