@@ -59,9 +59,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/programs/:ProgramID",
+					"raw": "{{BaseUrl}}/programs/:ProgramID",
 					"host": [
-						"{{baseUrl}}"
+						"{{BaseUrl}}"
 					],
 					"path": [
 						"programs",
@@ -77,7 +77,7 @@
 					"variable": [
 						{
 							"key": "ProgramID",
-							"value": "197"
+							"value": "7598"
 						}
 					]
 				}
@@ -181,14 +181,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"programId\": 301,\r\n        \"programName\": \"java\",\r\n        \"programDescription\": \"JavaTesting\",\r\n        \"programStatus\": \"Active\",\r\n        \"creationTime\": \"2023-01-11T22:22:32.000+00:00\",\r\n        \"lastModTime\": \"2023-01-11T22:22:32.000+00:00\"\r\n    }",
+					"raw": "{\r\n     \"programId\": 6495,\r\n        \"programName\": \"Jan23-APICoders-SDET-017-1000\",\r\n        \"programDescription\": \"API-Hackathon1-postmanss\",\r\n        \"programStatus\": \"Active\",\r\n        \"creationTime\": \"2023-01-19T03:07:03.815+00:00\",\r\n        \"lastModTime\": \"2023-01-19T03:07:03.815+00:00\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseUrl}}/putprogram/java"
+				"url": "{{baseUrl}}/putprogram/Jan23-APICoders-SDET-017-1000"
 			},
 			"response": []
 		},
@@ -529,7 +529,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "\r\n{\r\n\"batchName\":\"Jan23-ApiNinja5-SDET-016\",\r\n\"batchDescription\":\"Team-16\",\r\n\"batchStatus\":\"Active\", \r\n\"batchNoOfClasses\":7,\r\n\"programId\":1090\r\n}\r\n\r\n",
+					"raw": "\r\n{\r\n\"batchName\":\"Jan23-ApiNinja5-SDET-Team16\",\r\n\"batchDescription\":\"Team-16\",\r\n\"batchStatus\":\"Active\", \r\n\"batchNoOfClasses\":7,\r\n\"programId\":7779\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
