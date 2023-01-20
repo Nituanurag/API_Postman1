@@ -203,14 +203,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"programId\": 6495,\r\n        \"programName\": \"Jan23-APICoders-SDET-017\",\r\n        \"programDescription\": \"API-Hackathon1-postmanss111\",\r\n        \"programStatus\": \"Active\",\r\n        \"creationTime\": \"2023-01-19T03:07:03.815+00:00\",\r\n        \"lastModTime\": \"2023-01-19T03:07:03.815+00:00\"\r\n    }",
+							"raw": "{\r\n  \"programId\": 6495,\r\n        \"programName\": \"Jan23-APICoders-SDET\",\r\n        \"programDescription\": \"API-Hackathon1\",\r\n        \"programStatus\": \"Active\",\r\n        \"creationTime\": \"2023-01-19T03:07:03.815+00:00\",\r\n        \"lastModTime\": \"2023-01-19T03:07:03.815+00:00\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{baseUrl}}/putprogram/Jan23-APICoders-SDET-017"
+						"url": "{{baseUrl}}/putprogram/6495"
 					},
 					"response": []
 				},
