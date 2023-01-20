@@ -16,9 +16,10 @@
 							"script": {
 								"id": "b4765dc4-e442-4455-a057-b935d417682c",
 								"exec": [
-									"// pm.test(\"Verify status code 200\"), () => {\r",
-									"//     pm.response.to.have.status(200);\r",
-									"// }\r",
+									"pm.test(\"Verify status code 200\"), () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"}\r",
+									"const response = pm.response.json;\r",
 									"// // const response = pm.response.json;\r",
 									"// // console.log(response.status);\r",
 									"\r",
