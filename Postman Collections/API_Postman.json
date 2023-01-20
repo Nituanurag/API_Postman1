@@ -20,7 +20,11 @@
 									"    pm.response.to.have.status(200);\r",
 									"}\r",
 									"const response = pm.response.json;\r",
-									"console.log(response.status);"
+									"console.log(response.status);\r",
+									"\r",
+									"\r",
+									"\r",
+									"}"
 								],
 								"type": "text/javascript"
 							}
